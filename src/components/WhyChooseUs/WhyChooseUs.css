@@ -1,0 +1,38 @@
+.why-choose-us {
+  padding: 48px 0;
+}
+
+.why-card {
+  width: 100%;
+  max-width: 300px;
+  border: none !important;
+  border-radius: 0px;
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  background: #f0fbfc !important;
+}
+
+.why-card .card {
+  background: #f0fbfc;
+}
+
+.why-card:hover {
+  transform: translateY(-5px);
+  background-color: #06bbcc !important;
+  color: white;
+}
+
+.icon {
+  font-size: 3rem;
+  color: #06bbcc;
+}
+
+.why-card:hover .icon {
+  color: white;
+}
+
+.reason-text {
+  font-size: 1.2rem;
+  margin-top: 10px;
+}

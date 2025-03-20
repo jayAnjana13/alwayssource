@@ -1,0 +1,140 @@
+.service-card {
+  border: none;
+  text-align: center;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.service-card {
+  transition: transform 0.3s ease-in-out;
+  height: 100%;
+  min-height: 400px;
+  display: flex;
+  flex-direction: column;
+}
+
+.service-card .card-body {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  background-color: #f8f9fa;
+  justify-content: space-between;
+}
+.description {
+  flex-grow: 1;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  padding-top: 15px;
+}
+
+@media (max-width: 768px) {
+  .service-card {
+    min-height: 400px;
+  }
+}
+
+@media (max-width: 576px) {
+  .service-card {
+    min-height: 350px;
+  }
+}
+
+.image-container {
+  position: relative;
+  overflow: hidden;
+  height: 200px;
+}
+
+.image-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease-in-out;
+}
+
+.service-card:hover img {
+  transform: scale(1.1);
+}
+
+.overlay {
+  position: absolute;
+  bottom: 10px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+  opacity: 1;
+  transition: 0.3s ease-in-out;
+}
+
+.overlay .btn-left {
+  background: #06bbcc;
+  color: white;
+  border: none;
+  opacity: 0.8;
+  transition: opacity 0.3s ease-in-out;
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+  padding: 5px 15px;
+  opacity: 1;
+  border-right: 0.5px solid rgb(222, 226, 230);
+}
+
+.overlay .btn-right {
+  background: #06bbcc;
+  color: white;
+  border: none;
+  opacity: 0.8;
+  transition: opacity 0.3s ease-in-out;
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+  padding: 5px 15px;
+  opacity: 1;
+  border-left: 0.5px solid rgb(222, 226, 230);
+}
+
+.overlay .btn-left:hover,
+.overlay .btn-right:hover {
+  opacity: 1;
+  background-color: #00a2ff;
+}
+
+.image-container:hover .overlay .btn-sm {
+  opacity: 1;
+}
+
+.price {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #333;
+}
+
+.rating {
+  font-size: 13px;
+  color: #f4c150;
+}
+
+.card-body {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.info {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 10px;
+  font-size: 0.9rem;
+  color: #555;
+}
+
+.info span {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}

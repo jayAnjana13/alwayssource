@@ -1,0 +1,121 @@
+/* Section Styles */
+.download-app-section {
+  background: linear-gradient(45deg, #00a2ff, #06bbcc);
+  color: white;
+  padding: 50px 30px;
+  border-radius: 20px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+  margin: 50px 0;
+}
+
+/* Title and Description */
+.app-title {
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.app-desc {
+  font-size: 1.1rem;
+  margin-top: 10px;
+}
+
+/* Store Buttons */
+.store-buttons {
+  display: flex;
+  gap: 15px;
+  margin-top: 15px;
+  flex-wrap: wrap;
+}
+
+.store-btn {
+  width: 150px;
+  margin-right: 10px;
+  cursor: pointer;
+  transition: transform 0.3s ease-in-out;
+  animation: pulse 3s infinite ease-in-out;
+}
+.store-btn:hover {
+  transform: scale(1.05);
+}
+
+/* Highlight Card */
+.highlight-card {
+  background: #17cbdb;
+  border-radius: 15px;
+  padding: 20px 80px;
+  display: inline-block;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+  position: relative;
+  animation: floatAnimation 3s ease-in-out infinite;
+}
+
+.highlight-text {
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-align: center;
+  color: white;
+}
+
+/* Floating Animation */
+@keyframes floatAnimation {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+@keyframes pulse {
+  0% {
+    opacity: 0.5;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0.5;
+  }
+}
+
+/* Light Bulb Effect */
+.bulb-container {
+  color: yellow;
+  size: 70px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Responsive for screens below 767px */
+@media screen and (max-width: 768px) {
+  .download-app-section {
+    text-align: center;
+  }
+
+  .store-buttons {
+    justify-content: center;
+  }
+
+  .highlight-card {
+    width: 100%;
+    max-width: 300px;
+    margin: 20px auto;
+  }
+
+  .highlight-text {
+    font-size: 20px;
+  }
+
+  .store-buttons {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .store-btn {
+    width: 160px;
+  }
+}
