@@ -1,5 +1,5 @@
 import React from "react";
-import "./services.css";
+import "./Services.css";
 import { Container, Row, Col, Card, Button } from "react-bootstrap";
 import servicesImage from "../../assets/services.jpg";
 import factoryImage from "../../assets/factory-img.jpg";
