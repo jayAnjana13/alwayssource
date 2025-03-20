@@ -7,7 +7,7 @@ import Privacy from "./pages/privacy/Privacy.jsx";
 import ContactUs from "./pages/contactUs/ContactUs.jsx";
 import Footer from "./components/Footer/Footer.jsx";
 import Navbars from "./components/Navbar/Navbar.jsx";
-import FAQ from "./pages/FAQs/FAQ.jsx";
+import FAQ from "./pages/faqs/FAQ.jsx";
 import Terms from "./pages/termsAndCondition/Terms.jsx";
 import ScrollToTop from "./components/Scroll/ScrollToTop.jsx";
 import CancellationAndRefund from "./pages/cancellation/Cancellation.jsx";
